@@ -1,0 +1,58 @@
+// components/Navbar/Navbar.scss
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; // Use 100% of the viewport height
+    background-color: #fff; // White background color for the navbar
+    padding: 0; // No padding here; padding will be on each li
+    width: 10%;
+
+    .nav-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%; // Ensure the ul takes the full width of the navbar
+
+        li {
+            padding: 3rem 1rem; // 3rem padding top and bottom, 1rem left and right
+            border-bottom: 1px solid #ccc; // Grey line between list items
+            border-right: 1px solid #ccc;
+            &:last-child {
+                border-right: 1px solid #ccc;
+                border-bottom: none; // No border for the last item
+            }
+            &:hover {
+                background-color: #c5bdbd; // Light grey background on hover
+            }
+
+            a {
+                text-decoration: none;
+                color: #000; // Black text color for the icons and text
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: background-color 0.3s ease, color 0.3s ease;
+
+                // Icon styles
+                .svg-inline--fa {
+                    font-size: 1.5rem; // Size of FontAwesome icons
+                    margin-bottom: 0.3rem;
+                }
+
+                // Text label styles
+                span {
+                    font-size: 0.75rem;
+                }
+
+                // Hover effect
+
+                // Selected/Active link style
+                &.active {
+                    color: #000; // Keep text black for active state
+                    background-color: #e0e0e0; // A slightly darker grey background for active link
+                }
+            }
+        }
+    }
+}

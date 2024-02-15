@@ -1,10 +1,11 @@
 import "./App.scss";
-import { Dashboard } from "./components/Dashboard/Dashboard";
+
+import { Index } from "./Index/Index";
 
 function App() {
     return (
         <>
-            <Dashboard />
+            <Index />
         </>
     );
 }
