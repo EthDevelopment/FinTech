@@ -1,0 +1,34 @@
+@import "../../styles/boxshadows.scss";
+@import "../../styles/borders.scss";
+@import "../../styles/mixins.scss";
+@import "../../styles/colors.scss";
+@import "../../styles/typography.scss";
+
+.Dash-UI {
+    background-color: #3f51b5;
+    top: 0;
+    width: 100%;
+    height: 5rem; // Changed from max-height to height for consistency
+    position: sticky;
+    box-shadow: var(--box-shadow);
+    border-bottom: var(--border-bottom);
+    display: flex; // Use flexbox
+    align-items: center; // Center items vertically
+    padding: 0 1%; // Padding on both sides
+
+    .logo {
+        text-align: center;
+        padding: 0 2.5%;
+        margin-right: auto;
+        color: var(--c-white-0);
+    }
+
+    .content {
+        display: flex;
+        flex-grow: 1;
+        color: var(--c-white-0);
+        padding: 0 5%; // Padding on both sides
+        font-weight: var(--tw-normal-body);
+        @include flex-start;
+    }
+}
